@@ -8,7 +8,7 @@ def main():
 	#initializing the date list
 	date=[[0 for i in range(4)] for j in range(165)]
 	#opening the  dates2 file
-	with open('dates2.csv','r') as f:
+	with open('../dates/dates2.csv','r') as f:
 		reader=csv.reader(f,delimiter=',',quotechar='"',skipinitialspace=True)
 		# read rows, append values to lists
 		j=0
@@ -25,7 +25,7 @@ def main():
 	#initializing the opening price list
 	price=[0 for i in range(165)]
 	#opening the  opening price1 file
-	with open('opening_price1.csv','r') as f:
+	with open('../feeding/opening_price1.csv','r') as f:
 		reader=csv.reader(f,delimiter=',',quotechar='"',skipinitialspace=True)
 		# read rows, append values to lists
 		j=0
@@ -46,7 +46,7 @@ def main():
 	#initializing the predicting date list
 	date1=[[0 for i in range(4)] for j in range(104)]
 	#opening the  dates_prediction1 file
-	with open('date_prediction1.csv','r') as f:
+	with open('../dates/date_prediction1.csv','r') as f:
 		reader=csv.reader(f,delimiter=',',quotechar='"',skipinitialspace=True)
 		# read rows, append values to lists
 		j=0
@@ -63,7 +63,7 @@ def main():
 	#initializing the actual price list
 	price1=[0 for i in range(104)]
 	#opening the  actual_Price file
-	with open('actual_Price.csv','r') as f:
+	with open('../actual/actual_Price.csv','r') as f:
 		reader=csv.reader(f,delimiter=',',quotechar='"',skipinitialspace=True)
 		# read rows, append values to lists
 		j=0
